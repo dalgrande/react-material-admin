@@ -7,7 +7,6 @@ import {
   Menu,
   MenuItem,
   Fab,
-  Link
 } from "@material-ui/core";
 import {
   Menu as MenuIcon,
@@ -24,7 +23,7 @@ import classNames from "classnames";
 import useStyles from "./styles";
 
 // components
-import { Badge, Typography, Button } from "../Wrappers/Wrappers";
+import { Badge, Typography } from "../Wrappers/Wrappers";
 import Notification from "../Notification/Notification";
 import UserAvatar from "../UserAvatar/UserAvatar";
 
@@ -137,10 +136,10 @@ export default function Header(props) {
           )}
         </IconButton>
         <Typography variant="h6" weight="medium" className={classes.logotype}>
-          React Material Admin
+          Fred's Market Overview
         </Typography>
         <div className={classes.grow} />
-        <Button component={Link} href="https://flatlogic.com/templates/react-material-admin-full" variant={"outlined"} color={"secondary"} style={{marginRight: 24}}>Unlock full version</Button>
+
         <div
           className={classNames(classes.search, {
             [classes.searchFocused]: isSearchOpen,
@@ -289,15 +288,15 @@ export default function Header(props) {
         >
           <div className={classes.profileMenuUser}>
             <Typography variant="h4" weight="medium">
-              John Smith
+              Frederico Dal Grande
             </Typography>
             <Typography
               className={classes.profileMenuLink}
               component="a"
               color="primary"
-              href="https://flatlogic.com"
+              href="https://fredericodalgrande.com"
             >
-              Flalogic.com
+              fredericodalgrande.com
             </Typography>
           </div>
           <MenuItem
